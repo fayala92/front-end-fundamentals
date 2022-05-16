@@ -8,6 +8,8 @@ body {
     background: linear-gradient(#364958,#55828B);
     background-size: cover;
     height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
 #formulario {
@@ -19,8 +21,6 @@ body {
     border-radius: 10px;
     background-color: #3B6064;
     padding: 30px;
-    position: relative;
-    top: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
