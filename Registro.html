@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/StyleRegister.css">
+    <title>Registrarse</title>
+   
+</head>
+<body>
+    <form id="formulario" action="https://formspree.io/f/xjvljlpq" method="POST">
+        <h3>Registrarse</h3>
+        
+        <label for="name">*Nombre:</label> 
+        <input class="field" type="text" name="nombre" id="name" required> 
+        
+        <label for="email">*E-mail:</label> 
+        <input class="field" type="email" name="correo" id="email" required> 
+        
+        <label for="phone">Teléfono:</label> 
+        <input class="field" type="text" name="telefono" id="phone"> 
+        
+        <label for="password">*Contraseña:</label> 
+        <input class="field" type="password" name="pass" id="password" maxlength="10" placeholder="Máximo 10 carácteres" required> 
+        
+        <input id="checkbox" type="checkbox" required>
+        
+        <p id="tyc">Acepto los <a href="" target="_blank">términos y condiciones</a></p>
+        
+        <input id="enviar" type="submit" value="Enviar">
+
+        <a class="btn" id="gbtn" href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser" target="_blank">Continuar con Google</a>
+        <img class="gicon" src="/icons/2991148.png">
+        
+        <a class="btn" id="fbtn" href="https://www.facebook.com/" target="_blank">Continuar con Facebook</a></a>
+        <img class="fbicon" src="/icons/index-removebg-preview.png">
+        
+        <p id="login">¿Ya tienes una cuenta? <a id="InicSec" href="./Login.html">Inicia sesión</a></p>
+    </form>
+</body>
+</html>
