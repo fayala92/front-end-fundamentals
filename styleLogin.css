@@ -43,6 +43,13 @@ h3 {
     border-radius: 10px;
 }
 
+.material-symbols-outlined{
+    position: relative;
+    margin-right: 5px;
+    top: 5px;
+    color: rgb(187, 187, 187)
+}
+
 .field {
     text-indent: 10px;
 }
@@ -83,6 +90,9 @@ a:link, a:visited, a:active {
 }
 
 .btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
     width: 100%;
     height: 30px;
     padding: 5px;
@@ -101,22 +111,19 @@ a:link, a:visited, a:active {
     position: relative;
     bottom: 10px;
 }
+
 .gicon {
     width: 20px;
     height: 20px;
-    position: relative;
-    bottom: 25px;
-    left: 10px;
+    margin-right: 20px;
 }
 
 .fbicon {
     width: 20px;
     height: 20px;
-    position: relative;
-    bottom: 35px;
-    left: 10px;
-
+    margin-right: 20px;
 }
+
 #Registrarse{
     font-size: 14px;
     text-align: center;
@@ -133,4 +140,13 @@ a:link, a:visited, a:active {
 
 #RecuperarContraseña a{
     text-decoration: underline;
+}
+
+/* Login exitoso */
+
+#welcome {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    
 }

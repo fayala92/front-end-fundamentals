@@ -4,26 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/StyleInsertarCódigo.css">
+    <link rel="stylesheet" href="/styleInsertarCodigo.css">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Registrarse</title>
     <title>Recuperar contraseña</Log-in></title>
    
 </head>
 <body>
     <form id="formulario" action="">
-        <h3>Se ha remitido el código a su e-mail</h3>
+        <h3>Se ha remitido el código a su correo</h3>
                 
-        <label for="Recuperar contraseña">*Inserte código:</label> 
+        <label for="Insertar código"><span class="material-symbols-outlined">indeterminate_check_box</span> Inserte código *</label> 
         <input class="field" type="text" name="Insertar código" id="Insertar código" required> 
         
-        <label for="Ingrese nueva contraseña">*Ingrese nueva contraseña:</label> 
-        <input class="field" type="password" name="pass" id="password" required> 
+        <label for="password"><span class="material-symbols-outlined">lock</span> Ingrese nueva contraseña *</label> 
+        <input class="field" type="password" name="pass" id="password" minlength="5" maxlength="10" placeholder="Min. 5 - Máx. 10 carácteres" title="Ingrese su contraseña" required> 
        
-        <label for="Repite contraseña">*Confirme contraseña:</label> 
-        <input class="field" type="password" name="pass" id="password" required> 
-        
-        <input id="enviar" type="submit" value="Enviar">
+        <label for="confirmePaassword"><span class="material-symbols-outlined">check_box</span> Confirme contraseña *</label> 
+        <input class="field" type="password" name="pass" id="confirmePassword" title="Confirme su contraseña" required> 
 
-        <p>¿No recibió el mail? ¡Controle su casilla de spam! <a id="RemNuevo" href="/InsertarCodigo.html">Reenviar mail</a></p>
+        <input id="enviar" type="submit" value="Enviar"><br>
+
+        <p>¿No recibió el mail? ¡Controle su casilla de spam! <a id="RemNuevo" href="/insertarCodigo.html">Reenviar mail</a></p>
     </form>
+    <script>
+        let formulario = document.getElementById("formulario")
+
+        formulario.onsubmit = function(event){
+            event.preventDefault()
+            
+            alert("¡Contraseña cambiada con éxito!")
+
+            window.location = "Login.html"
+        }
+    </script>
 </body>
 </html>

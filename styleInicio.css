@@ -10,62 +10,44 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-#formulario {
+#container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    width: 25%; 
+    align-items: center;
+    width: 25%;
     border-radius: 10px;
     background-color: #3B6064;
     padding: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-h3 {
+h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: white;
+    color: rgb(184, 184, 184)  
 }
 
-#formulario label {
-    margin-bottom: 10px;
-    color: white;
-    
-}
-
-#formulario input {
-    margin-bottom: 10px;
-    background-color: #C9E4CA;
-    border-color: #87BBA2;
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    margin-bottom: 15px;
+    width: 40%;
+    height: 30px;
     border-radius: 10px;
+    background-color: rgb(184, 184, 184);
 }
 
-#enviar{
-    width: 30%;
-    height: 20px;
-    margin: auto;
-    border-radius: 10px;
-}
-
-#enviar input{
-    text-indent: 0px;
+.material-symbols-outlined{
+    margin-right: 10px;
+    color: rgb(63, 63, 63)  
 }
 
 a:link, a:visited, a:active {
     text-decoration: none;
     color: black;
-    text-align: center;
 }
-
-p{
-    font-size: 14px;
-    text-align: center;
-}
-
-#RemNuevo{
-    text-decoration: underline;
-}
-
